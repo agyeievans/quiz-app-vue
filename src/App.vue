@@ -22,14 +22,8 @@
     </header>
 
     <div class="options-container">
+      <!-- show card component -->
       <Card v-for="quiz in quizzes" :key="quiz.id" :quiz="quiz" />
-      <!-- <div v-for="quiz in quizzes" :key="quiz.id" class="card">
-        <img :src="quiz.img" alt="">
-        <div class="card-text">
-          <h2>{{ quiz.name }}</h2>
-          <p>{{ quiz.questions.length }} questions</p>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
