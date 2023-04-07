@@ -6,7 +6,7 @@
 
 <template>
     <header>
-        <h4>Question {{questionStatus}}</h4>
+        <h1>Question {{questionStatus}}</h1>
         <div class="bar">
             <div class="completion"></div>
         </div>
@@ -15,16 +15,17 @@
 
 <style scoped>
 header {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-header h4 {
+header h1 {
     font-size: 30px;
+    margin-top: -10px;
 }
 
 .bar {
     width: 300px;
-    height: 50px;
+    height: 40px;
     border: 3px solid bisque;
 }
 

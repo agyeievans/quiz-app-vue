@@ -6,9 +6,9 @@ const {question} = defineProps(['question'])
 
 <template>
     <div class="question-container">
-        <h1 class="question">
+        <h4 class="question">
             {{ question.text }}
-        </h1>
+        </h4>
     </div>
     <div class="options-container">
         <div v-for="option in question.options" :key="option.id" class="option">
@@ -26,13 +26,13 @@ const {question} = defineProps(['question'])
 }
 
 .question {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .option {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
