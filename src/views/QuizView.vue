@@ -48,7 +48,9 @@ const onOptionSelected = (isCorrect) => {
             <question v-if="!showResults" :question="quiz.questions[currentQuestionIndex]" 
             @selectOption="onOptionSelected" />
 
-            <result v-else />
+            <result v-else 
+            :quizQuestionLength="quiz.questions.length"
+            :numberOfCorrectAnswers="numberOfCorrectAnswers" />
         </div>
     </div>
 </template>
